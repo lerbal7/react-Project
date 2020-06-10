@@ -1,7 +1,7 @@
 import React from "react"
 import "./style.css"
 
-function Navbar() {
+function Navbar(props) {
 
   const date = new Date()
   const hours = date.getHours()
@@ -13,8 +13,6 @@ function Navbar() {
   const stylePara = {
     fontSize: "20px"
   }
-
-  const name = "Leandro"
 
   if (hours < 12) {
     stylePara.backgroundColor = "red"
@@ -29,10 +27,10 @@ function Navbar() {
       <ul>
         <li style={styleItem1}>Item 1</li>
         <li className="item2">Item 2</li>
-        <li>Item 3</li>
+        <li>Item {props.number}</li>
       </ul>
 
-      <p style={stylePara}>Hello {name}</p>
+      <p style={stylePara}>Hello {props.name}</p>
     </nav>
   )
 }
