@@ -11,15 +11,6 @@ function TodoItem() {
     <div>
       <input type="checkbox" />
       <p style={styles}>Placeholder goes in here</p>
-
-      <input type="checkbox" />
-      <p className="stylePara2">Placeholder goes in here</p>
-
-      <input type="checkbox" />
-      <p>Placeholder goes in here</p>
-
-      <input type="checkbox" />
-      <p>Placeholder goes in here</p>
     </div>
   )
 }

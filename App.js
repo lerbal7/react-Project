@@ -3,7 +3,12 @@ import TodoItem from "./TodoItem"
 
 function App() {
   return (
-    <TodoItem />
+    <div>
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
+    </div>
   )
 }
 
