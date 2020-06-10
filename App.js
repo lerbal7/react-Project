@@ -1,9 +1,9 @@
 import React from "react"
-import Navbar from "./Navbar"
+import TodoItem from "./TodoItem"
 
 function App() {
   return (
-    <Navbar />
+    <TodoItem />
   )
 }
 
