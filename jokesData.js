@@ -16,6 +16,7 @@ const jokesData = [
   },
   {
     id: 4,
+    question : "klfn",
     punchline : "klsanlksasdanlk"
   }
 ]

@@ -7,7 +7,9 @@ import jokesData from "./jokesData"
 
 function App() {
 
-  const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline}/>)
+  const jokeLargeComponents = jokesData.filter(joke => joke.question.length < 6)
+  console.log(jokeLargeComponents)
+  const jokeComponents = jokeLargeComponents.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline}/>)
 
   return (
     <div>
