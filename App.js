@@ -2,10 +2,16 @@ import React from "react"
 import Navbar from "./Navbar"
 import TodoItem from "./TodoItem"
 import ContactCard from "./ContactCard"
+import Joke from "./Joke"
+import jokesData from "./jokesData"
 
 function App() {
+
+  const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline}/>)
+
   return (
     <div>
+    {/* 
       <Navbar name="Leandro"/>
       <Navbar name="Roberto" number={4}/>
 
@@ -22,6 +28,9 @@ function App() {
       <ContactCard 
         contact = {{name:"Mr Whiskas", imgUrl:"http://placekitten.com/600/100" ,phone:"14141421" ,email:"eqwrqr@laknfakl.com" }}
       />
+    */}
+      {jokeComponents}
+
     </div>
   )
 }
