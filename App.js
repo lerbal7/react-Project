@@ -4,12 +4,16 @@ import TodoItem from "./TodoItem"
 import ContactCard from "./ContactCard"
 import Joke from "./Joke"
 import jokesData from "./jokesData"
+import Product from "./Product"
+import vschoolsProducts from "./vschoolsProducts"
 
 function App() {
 
-  const jokeLargeComponents = jokesData.filter(joke => joke.question.length < 6)
-  console.log(jokeLargeComponents)
-  const jokeComponents = jokeLargeComponents.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline}/>)
+  {/* 
+  const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline}/>)
+  */}
+
+  const productComponents = vschoolsProducts.map(product => <Product key={product.id} name={product.name} price={product.price} description={product.description}/>)
 
   return (
     <div>
@@ -31,7 +35,9 @@ function App() {
         contact = {{name:"Mr Whiskas", imgUrl:"http://placekitten.com/600/100" ,phone:"14141421" ,email:"eqwrqr@laknfakl.com" }}
       />
     */}
-      {jokeComponents}
+      {/*{jokeComponents}*/}
+
+      {productComponents}
 
     </div>
   )
