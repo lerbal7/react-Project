@@ -17,7 +17,7 @@ function Product(props) {
   }
 
   return(
-    <div>
+    <div className="card">
       <h1 className="headerStyle">{props.name}</h1>
       <p style={stylesPrice}>Price: {props.price}</p>
       <p style={stylesDesc}>Description: {props.description}</p>
