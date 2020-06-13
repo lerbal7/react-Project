@@ -1,3 +1,10 @@
 h1, p {
   font-family: Lato;
 }
+
+.headerStyle {
+  font-size: "30px";
+  color: #D71010;
+  background-color: white;
+  font-weight: 800;
+}

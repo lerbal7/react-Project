@@ -6,6 +6,7 @@ import Joke from "./Joke"
 import jokesData from "./jokesData"
 import Product from "./Product"
 import vschoolsProducts from "./vschoolsProducts"
+import "./style.css"
 
 function App() {
 
